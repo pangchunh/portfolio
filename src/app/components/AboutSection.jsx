@@ -89,13 +89,13 @@ const AboutSection = () => {
 
   return (
     <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
+      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-32 xl:px-16">
         <Image src="/images/about-image.png" width={500} height={500} />
-        <div>
+        <div className="mt-4 md:mt-0 text-lef flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
+          <p className="text-base lg:text-lg justify-center">
             I'm a highly motivated and results-oriented full-stack developer
-            with over 10 years of experience building and maintaining web
+            with over 2 years of experience building and maintaining software
             applications. I'm proficient in both front-end and back-end
             technologies, including Typescript, React.js, Deno.js, PostgreSQL,
             and cloud platforms like AWS. In my previous role at Virtual
@@ -123,7 +123,7 @@ const AboutSection = () => {
               active={tab === "tools"}
             >
               {" "}
-              Tools and OS{" "}
+              Tools{" "}
             </TabButton>
             <TabButton
               selectTab={() => {
@@ -141,7 +141,7 @@ const AboutSection = () => {
               active={tab === "domains"}
             >
               {" "}
-              Practices and Domains{" "}
+              Domains{" "}
             </TabButton>
           </div>
           <div className="mt-8">
