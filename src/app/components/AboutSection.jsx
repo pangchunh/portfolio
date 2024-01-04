@@ -101,8 +101,8 @@ const AboutSection = () => {
           <p className="text-base lg:text-lg text-center lg:text-left">
             As a Full Stack Developer and Software Engineer, my adaptability and
             quick learning skills are at the forefront of my professional
-            approach. This was highlighted in my team's first-place finish at
-            the YVR's student hackathon, showcasing our innovative
+            approach. This was highlighted in my team&apos;s first-place finish at
+            the YVR&apos;s student hackathon, showcasing our innovative
             problem-solving capabilities. My experience in various roles has
             strengthened my proficiency in programming languages such as
             Python, Typescript and JavaScript, and has allowed me to excel in API
