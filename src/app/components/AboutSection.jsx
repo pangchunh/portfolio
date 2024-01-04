@@ -90,24 +90,29 @@ const AboutSection = () => {
   return (
     <section id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-32 xl:px-16">
-        <Image src="/images/about-image.png" alt="about image" width={500} height={500} />
+        <Image
+          src="/images/about-image.png"
+          alt="about image"
+          width={500}
+          height={500}
+        />
         <div className="mt-4 md:mt-0 text-lef flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg justify-center">
-            I&apos;m a highly motivated and results-oriented full-stack developer
-            with over 2 years of experience building and maintaining software
-            applications. I&apos;m proficient in both front-end and back-end
-            technologies, including Typescript, React.js, Deno.js, PostgreSQL,
-            and cloud platforms like AWS. In my current role at Virtual
-            Hospitals Africa, I played a key role in integrating Google Calendar
-            and WhatsApp Cloud API to streamline appointment scheduling,
-            showcasing my ability to work with diverse technologies and tackle
-            complex challenges. I&apos;m passionate about clean code, test-driven
-            development, and collaborating effectively with teams to deliver
-            high-quality software.
+          <p className="text-base lg:text-lg text-center lg:text-left">
+            As a Full Stack Developer and Software Engineer, my adaptability and
+            quick learning skills are at the forefront of my professional
+            approach. This was highlighted in my team's first-place finish at
+            the YVR's student hackathon, showcasing our innovative
+            problem-solving capabilities. My experience in various roles has
+            strengthened my proficiency in programming languages such as
+            Python, Typescript and JavaScript, and has allowed me to excel in API
+            integration, database script development, and automated testing.
           </p>
-          <h3 id="skills" className="text-4xl font-bold text-white mt-4">Skills</h3>
-          <div  className="flex flex-row mt-4">
+          <div id="skills" className=""></div>
+          <h3 className="text-4xl font-bold text-white mt-16 lg:mt-8">
+            Skills
+          </h3>{" "}
+          <div className="flex flex-row mt-4">
             <TabButton
               selectTab={() => {
                 handleTabChange("languages");
@@ -145,7 +150,7 @@ const AboutSection = () => {
               Domains{" "}
             </TabButton>
           </div>
-          <div className="mt-8">
+          <div className="mt-4">
             {TAB_DATA.find((t) => t.id === tab).content}
           </div>
         </div>

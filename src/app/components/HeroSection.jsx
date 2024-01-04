@@ -36,13 +36,8 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            I&apos;m a dedicated full-stack developer with a strong foundation in
-            cloud computing and a knack for creating robust automated tests. My
-            technical journey has been marked by a first-place win at a student
-            hackathon and a solid academic performance. Skilled in TypeScript,
-            JavaScript, Java and Python, I leverage my business administration
-            background to deliver solutions that are not just technically sound
-            but also commercially viable.
+            A dedicated full-stack developer with a strong foundation in
+            cloud computing and a knack for creating robust automated tests.
           </p>
           <div>
             <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-primary-500 from-10% via-sky-500 via-30% to-secondary-500 to-90% hover:bg-slate-200 text-white">
