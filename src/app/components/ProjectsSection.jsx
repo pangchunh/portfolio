@@ -67,7 +67,7 @@ const projectData = [
       "Pandas",
       "Matplotlib",
     ],
-    previewUrl: "https://belalk.xyz/",
+    previewUrl: "/serv-tennis.pdf",
   },
   {
     id: 5,
@@ -108,33 +108,35 @@ const ProjectsSection = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   return (
-    <section>
-      <h2 className="text-center text-4xl font-extrabold text-white mt-4 mb-4">
-        <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
-          My Projects
-        </span>
-      </h2>
-      <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
-        {projectData.map((project, index) => (
-          <motion.li
-            key={index}
-            variants={cardVariants}
-            initial="initial"
-            animate={isInView ? "animate" : "initial"}
-            transition={{duration: 0.3, delay: index * 0.4}}
-          >
-            <ProjectCard
-              key={project.id}
-              imgUrl={project.imgUrl}
-              title={project.title}
-              description={project.description}
-              tags={project.tag}
-              gitUrl={project.gitUrl}
-              previewUrl={project.previewUrl}
-            />
-          </motion.li>
-        ))}
-      </ul>
+    <section id="projects">
+      <div className="pt-12">
+        <h2 className="text-center text-4xl font-extrabold text-white mt-4 mb-8">
+          <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600">
+            My Projects
+          </span>
+        </h2>
+        <ul ref={ref} className="grid md:grid-cols-3 gap-8 md:gap-12">
+          {projectData.map((project, index) => (
+            <motion.li
+              key={index}
+              variants={cardVariants}
+              initial="initial"
+              animate={isInView ? "animate" : "initial"}
+              transition={{duration: 0.3, delay: index * 0.4}}
+            >
+              <ProjectCard
+                key={project.id}
+                imgUrl={project.imgUrl}
+                title={project.title}
+                description={project.description}
+                tags={project.tag}
+                gitUrl={project.gitUrl}
+                previewUrl={project.previewUrl}
+              />
+            </motion.li>
+          ))}
+        </ul>
+      </div>
     </section>
   );
 };

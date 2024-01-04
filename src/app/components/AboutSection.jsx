@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Languages",
     id: "languages",
     content: (
-      <ul>
+      <ul class="list-disc">
         <li>Typescript</li>
         <li>Javascript</li>
         <li>Python</li>
@@ -25,7 +25,7 @@ const TAB_DATA = [
     title: "Tools",
     id: "tools",
     content: (
-      <ul>
+      <ul class="list-disc">
         <li>Docker</li>
         <li>Kubernetes</li>
         <li>Git</li>
@@ -43,7 +43,7 @@ const TAB_DATA = [
     title: "Frameworks",
     id: "frameworks",
     content: (
-      <ul>
+      <ul class="list-disc">
         <li>Node.js</li>
         <li>Express.js</li>
         <li>Next.js</li>
@@ -61,7 +61,7 @@ const TAB_DATA = [
     title: "Domains",
     id: "domains",
     content: (
-      <ul>
+      <ul class="list-disc">
         <li>Object Oriented Programming</li>
         <li>Full Stack Web Development</li>
         <li>Serverless Architecture</li>
@@ -88,25 +88,26 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
+    <section id="about" className="text-white">
       <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-32 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} />
+        <Image src="/images/about-image.png" alt="about image" width={500} height={500} />
         <div className="mt-4 md:mt-0 text-lef flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg justify-center">
-            I'm a highly motivated and results-oriented full-stack developer
+            I&apos;m a highly motivated and results-oriented full-stack developer
             with over 2 years of experience building and maintaining software
-            applications. I'm proficient in both front-end and back-end
+            applications. I&apos;m proficient in both front-end and back-end
             technologies, including Typescript, React.js, Deno.js, PostgreSQL,
-            and cloud platforms like AWS. In my previous role at Virtual
+            and cloud platforms like AWS. In my current role at Virtual
             Hospitals Africa, I played a key role in integrating Google Calendar
             and WhatsApp Cloud API to streamline appointment scheduling,
             showcasing my ability to work with diverse technologies and tackle
-            complex challenges. I'm passionate about clean code, test-driven
+            complex challenges. I&apos;m passionate about clean code, test-driven
             development, and collaborating effectively with teams to deliver
             high-quality software.
           </p>
-          <div className="flex flex-row mt-8">
+          <h3 id="skills" className="text-4xl font-bold text-white mt-4">Skills</h3>
+          <div  className="flex flex-row mt-4">
             <TabButton
               selectTab={() => {
                 handleTabChange("languages");
