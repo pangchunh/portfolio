@@ -3,10 +3,13 @@ import './globals.css'
 
 const inter = Inter({ subsets: ['latin'] })
 
+/* eslint-disable */
 export const metadata = {
-  title: 'Peter Pang&apos;s Portfolio',
+  title: "Peter Pang's Portfolio",
   description: 'Full Stack Developer from Vancouver, BC',
 }
+
+/* eslint-disable */
 
 export default function RootLayout({ children }) {
   return (
