@@ -98,14 +98,14 @@ const AboutSection = () => {
         />
         <div className="mt-4 md:mt-0 text-lef flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg text-center lg:text-left">
+          <p className="text-base lg:text-lg lg:text-left text-justify">
             As a Full Stack Developer and Software Engineer, my adaptability and
             quick learning skills are at the forefront of my professional
-            approach. This was highlighted in my team&apos;s first-place finish at
-            the YVR&apos;s student hackathon, showcasing our innovative
+            approach. This was highlighted in my team&apos;s first-place finish
+            at the YVR&apos;s student hackathon, showcasing our innovative
             problem-solving capabilities. My experience in various roles has
-            strengthened my proficiency in programming languages such as
-            Python, Typescript and JavaScript, and has allowed me to excel in API
+            strengthened my proficiency in programming languages such as Python,
+            Typescript and JavaScript, and has allowed me to excel in API
             integration, database script development, and automated testing.
           </p>
           <div id="skills" className=""></div>

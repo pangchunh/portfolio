@@ -13,7 +13,7 @@ const achievementsList = [
   { metric: "Projects", value: 20, postfix: "+" },
   { metric: "Programming Languages", value: 6, postfix: "+" },
   { metric: "Awards", value: 1, postfix: "" },
-  { metric: "Years", value: 2, postfix: "+" },
+  { metric: "Years", value: 3, postfix: "+" },
 ];
 
 const AchievementsSection = () => {
@@ -42,7 +42,7 @@ const AchievementsSection = () => {
                 />
                 {achievement.postfix}
               </h2>
-              <p className="text-[#ADB7BE] text-base">{achievement.metric}</p>
+              <p className="text-[#ADB7BE] text-base text-center">{achievement.metric}</p>
             </div>
           );
         })}
