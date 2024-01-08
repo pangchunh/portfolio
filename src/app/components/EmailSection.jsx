@@ -115,7 +115,7 @@ const EmailSection = () => {
           </button>
           {emailSubmitted && (
             <p className="text-green-500 text-sm mt-2">
-              Email has been sent successfully!
+              Email has been sent successfully! A copy of your message has been sent to your mailbox, please check your spam folder if you cannot find it.
             </p>
           )
             }
