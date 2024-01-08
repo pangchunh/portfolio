@@ -36,15 +36,16 @@ const HeroSection = () => {
             />
           </h1>
           <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            A dedicated full-stack developer with a strong foundation in
-            cloud computing and a knack for creating robust automated tests.
+            A dedicated full-stack developer with a strong foundation in cloud
+            computing and a knack for creating robust automated tests.
           </p>
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-primary-500 from-10% via-sky-500 via-30% to-secondary-500 to-90% hover:bg-slate-200 text-white">
-              <a href="#contact">
-              Hire Me
-              </a>
-            </button>
+            <a href="#contact">
+              <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-r from-primary-500 from-10% via-sky-500 via-30% to-secondary-500 to-90% hover:bg-slate-200 text-white">
+                <span>Hire Me</span>
+              </button>
+            </a>
+
             <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-r from-primary-500 from-10% via-sky-500 via-30% to-secondary-500 to-90% hover:bg-slate-800 text-white mt-3">
               <a href="/resume.pdf">
                 <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">
