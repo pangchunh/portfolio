@@ -1,13 +1,9 @@
 "use client";
 import React from "react";
 import dynamic from "next/dynamic";
-
-const AnimatedNumbers = dynamic(
-  () => {
-    return import("react-animated-numbers");
-  },
-  { ssr: false }
-);
+const AnimatedNumbers = dynamic(() => import("react-animated-numbers"), {
+  ssr: false,
+});
 
 const achievementsList = [
   { metric: "Projects", value: 20, postfix: "+" },
@@ -32,13 +28,10 @@ const AchievementsSection = () => {
                   animateToNumber={parseInt(achievement.value)}
                   locale="en-US"
                   className="text-white text-4xl font-bold"
-                  configs={(_, index) => {
-                    return {
-                      mass: 1,
-                      friction: 100,
-                      tensions: 140 * (index + 1),
-                    };
-                  }}
+                  transitions={(index) => ({
+                    type: "spring",
+                    duration: index + 2,
+                  })}
                 />
                 {achievement.postfix}
               </h2>

@@ -6,6 +6,30 @@ import { animate, motion, useInView } from "framer-motion";
 const projectData = [
   {
     id: 1,
+    title: "Timezone application QA automation",
+    description:
+      "A QA exercise for the timezone web application, where I explored Playwright by creating e2e tests, and integrated it with GitHub Actions for continuous testing and deployment.",
+    imgUrl: "/images/projects/timezone.png",
+    tag: [
+      "Quality Assuarance",
+      "Playwright",
+      "Automated Testing",
+      "Github Actions",
+    ],
+    gitUrl: "https://github.com/pangchunh/timezone-app",
+  },
+  {
+    id: 2,
+    title: "Personal Portfolio",
+    description:
+      "A responsive portfolio website built with Next.js, Tailwind CSS which showcases my projects and skills and is deployed on vercel pointing to my AWS Route 53 domain.",
+    imgUrl: "/images/projects/portfolio.png",
+    tag: ["Next.js", "Javascript", "Tailwind CSS", "Route 53", "Framer Motion"],
+    gitUrl: "https://github.com/pangchunh/portfolio",
+    previewUrl: "https://www.chunhp-cloud.net/",
+  },
+  {
+    id: 3,
     title: "AI Summarizer",
     description:
       "A web app that summarizes text using AWS Lambda with admin dashboard",
@@ -24,7 +48,7 @@ const projectData = [
     previewUrl: "https://isa-ai-summarizer.onrender.com/",
   },
   {
-    id: 2,
+    id: 4,
     title: "AWS timesheet engine",
     description:
       "A serverless timesheet engine using AWS Lambda, Step Functions and API Gateway",
@@ -43,7 +67,7 @@ const projectData = [
     gitUrl: "https://github.com/pangchunh/ChronoSystems-AWS-TimeSheet-Engine",
   },
   {
-    id: 3,
+    id: 5,
     title: "Cloud Photo App",
     description:
       "A cloud based web albums that utilize AWS S3, DynamoDB and AWS EC2",
@@ -53,7 +77,7 @@ const projectData = [
     previewUrl: "https://belalk.xyz/",
   },
   {
-    id: 4,
+    id: 6,
     title: "ServTennis",
     description:
       "A Python application that helps tennis players visuilize their performance using Machine Learning and Computer Vision.",
@@ -70,7 +94,7 @@ const projectData = [
     previewUrl: "/serv-tennis.pdf",
   },
   {
-    id: 5,
+    id: 7,
     title: "YVR student Hackathon - Keep it Clean",
     description:
       "An initiative to keep the YVR airport clean using Machine Learning and Computer Vision.",
@@ -79,7 +103,7 @@ const projectData = [
     previewUrl: "https://www.yvr.ca/en/blog/2023/innovation-hub-hackathon",
   },
   {
-    id: 6,
+    id: 8,
     title: "Slack Heroku Integration",
     description:
       "Integrate Slack with Heroku to get webhook notifications on your Slack channel when your Heroku app is deployed.",
@@ -88,7 +112,7 @@ const projectData = [
     gitUrl: "https://github.com/pangchunh/herokuwebhook",
   },
   {
-    id: 7,
+    id: 9,
     title: "Serenity Meditation Web App",
     description:
       "This browser based web application aims to help busy people connect with spirit and feel a sense of peace and relaxation by providing fun and easy to learn practices in less than 7 minutes.",
@@ -122,7 +146,7 @@ const ProjectsSection = () => {
               variants={cardVariants}
               initial="initial"
               animate={isInView ? "animate" : "initial"}
-              transition={{duration: 0.3, delay: index * 0.4}}
+              transition={{ duration: 0.3, delay: index * 0.6 }}
             >
               <ProjectCard
                 key={project.id}

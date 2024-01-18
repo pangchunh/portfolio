@@ -8,7 +8,7 @@ const TAB_DATA = [
     title: "Languages",
     id: "languages",
     content: (
-      <ul class="list-disc">
+      <ul className="list-disc">
         <li>Typescript</li>
         <li>Javascript</li>
         <li>Python</li>
@@ -25,7 +25,7 @@ const TAB_DATA = [
     title: "Tools",
     id: "tools",
     content: (
-      <ul class="list-disc">
+      <ul className="list-disc">
         <li>Docker</li>
         <li>Kubernetes</li>
         <li>Git</li>
@@ -43,7 +43,7 @@ const TAB_DATA = [
     title: "Frameworks",
     id: "frameworks",
     content: (
-      <ul class="list-disc">
+      <ul className="list-disc">
         <li>Node.js</li>
         <li>Express.js</li>
         <li>Next.js</li>
@@ -61,7 +61,7 @@ const TAB_DATA = [
     title: "Domains",
     id: "domains",
     content: (
-      <ul class="list-disc">
+      <ul className="list-disc">
         <li>Object Oriented Programming</li>
         <li>Full Stack Web Development</li>
         <li>Serverless Architecture</li>
